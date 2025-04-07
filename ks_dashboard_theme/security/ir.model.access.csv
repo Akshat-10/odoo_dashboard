@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ks_dashboard_ninja_theme,ks_dashboard_ninja.theme,model_ks_dashboard_ninja_theme,,1,1,1,1

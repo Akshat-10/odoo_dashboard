@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="ks_chart_theme_warm" model="ks_dashboard_ninja.theme">
+            <field name="name">Warm</field>
+            <field name="ks_theme_item_type">charts</field>
+            <field name="ks_chart_theme_type">gradient</field>
+            <field name="ks_theme_color_code">["#FEEB65,0.99","#E4521B,0.99","#4D342F,0.99"]</field>
+            <field name="ks_theme_color_picker">["#FEEB65,0.99","#E4521B,0.99","#4D342F,0.99"]</field>
+            <field name="ks_theme_gradient_view">''</field>
+            <field name="ks_gradient_slider">180</field>
+            <field name="ks_theme_chart_view">''</field>
+        </record>
+        <record id="ks_chart_theme_cool" model="ks_dashboard_ninja.theme">
+            <field name="name">Cool</field>
+            <field name="ks_theme_item_type">charts</field>
+            <field name="ks_chart_theme_type">gradient</field>
+            <field name="ks_theme_color_code">["#dcedc8,0.99","#42b3d5,0.99","#1a273e,0.99"]</field>
+            <field name="ks_theme_color_picker">["#dcedc8,0.99","#42b3d5,0.99","#1a273e,0.99"]</field>
+            <field name="ks_theme_gradient_view">''</field>
+            <field name="ks_gradient_slider">180</field>
+            <field name="ks_theme_chart_view">''</field>
+        </record>
+        <record id="ks_chart_theme_neon" model="ks_dashboard_ninja.theme">
+            <field name="name">Neon</field>
+            <field name="ks_theme_item_type">charts</field>
+            <field name="ks_chart_theme_type">gradient</field>
+            <field name="ks_theme_color_code">["#ffecb3,0.99","#e85285,0.99","#6a1b9a,0.99"]</field>
+            <field name="ks_theme_color_picker">["#ffecb3,0.99","#e85285,0.99","#6a1b9a,0.99"]</field>
+            <field name="ks_theme_gradient_view">''</field>
+            <field name="ks_gradient_slider">180</field>
+            <field name="ks_theme_chart_view">''</field>
+        </record>
+        <record id="ks_chart_theme_default" model="ks_dashboard_ninja.theme">
+            <field name="name">Default</field>
+            <field name="ks_theme_item_type">charts</field>
+            <field name="ks_chart_theme_type">gradient</field>
+<!--            <field name="ks_theme_color_code">["#F04F65,0.99", "#f69032,0.99", "#fdc233,0.99", "#53cfce,0.99", "#36a2ec,0.99", "#8a79fd,0.99", "#b1b5be,0.99", "#1c425c,0.99", "#8c2620,0.99", "#71ecef,0.99", "#0b4295,0.99", "#f2e6ce,0.99", "#1379e7,0.99"]</field>-->
+            <field name="ks_theme_color_code">["#B1B2FF,0.99", "#367E18,0.99", "#F57328,0.99", "#CC3636,0.99", "#790252,0.99"]</field>
+<!--            <field name="ks_theme_color_picker">["#F04F65,0.99", "#f69032,0.99", "#fdc233,0.99", "#53cfce,0.99", "#36a2ec,0.99", "#8a79fd,0.99", "#b1b5be,0.99", "#1c425c,0.99", "#8c2620,0.99", "#71ecef,0.99", "#0b4295,0.99", "#f2e6ce,0.99", "#1379e7,0.99"]</field>-->
+            <field name="ks_theme_color_picker">["#B1B2FF,0.99", "#367E18,0.99", "#F57328,0.99", "#CC3636,0.99"]</field>
+            <field name="ks_theme_gradient_view">''</field>
+            <field name="ks_gradient_slider">180</field>
+            <field name="ks_theme_chart_view">''</field>
+        </record>
+    </data>
+</odoo>

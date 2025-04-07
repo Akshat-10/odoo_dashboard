@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="ks_item_form_view_inherit" model="ir.ui.view">
+            <field name="model">ks_dashboard_ninja.board</field>
+            <field name="inherit_id" ref="ks_dashboard_ninja.board_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='ks_set_interval']" position="replace">
+                    <field name="ks_auto_update_type" widget="radio"/>
+                    <field name="ks_show_live_pop_up"
+                                       attrs="{'invisible':[('ks_auto_update_type','!=','ks_live_update')]}"/>
+                    <field name="ks_set_interval" attrs="{'invisible':[('ks_auto_update_type','!=','ks_update_interval')]}" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+

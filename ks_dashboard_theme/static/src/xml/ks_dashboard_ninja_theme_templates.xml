@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-name="ks_color_picker_opacity_view">
+        <div>
+            <input class='ks_color_picker'/>
+            <!--        <input class="ks_color_picker" type="color" t-att-value="ks_color_value"/>-->
+            Transparency :
+            <input type="range" t-att-value="ks_color_opacity" class="ks_color_opacity" name="ks_db_item_opacity"
+                   min="0"
+                   max="0.99" step="0.01"/>
+        </div>
+    </t>
+    <!--    Dashboard Theme Toggle-->
+    <t t-extend="ksDashboardNinjaHeader">
+        <t t-jquery="div.ks_am_content_element" t-operation="before">
+            <div class="custom-switch ks-dashboard-switch mr-5" style="margin-right:20px">
+                <div class="d-flex align-items-center justify-content-center w-100 theme_popup_parent">
+                    <span id="popup" class="theme_popup">
+                        <strong>Light/Dark</strong>
+                    </span>
+                    <input type="checkbox" checkbox="checkbox" data-name="ks_dn_dark_mode" name="ks_dn_dark_mode_toggle"
+                           class="custom-control-input ks-dashboard-control-input" id="ks_dashboard_dark_mode"/>
+                    <label class="custom-control-label ks-dashboard-control-label" for="ks_dashboard_dark_mode"
+                           style="margin-top: -20px;"></label>
+                </div>
+            </div>
+
+        </t>
+    </t>
+
+    <t t-extend="ks_gridstack_container">
+        <t t-jquery="ul.ks_color_pallate" t-operation="replace">
+            <ul role="menu" class="dropdown-menu dropdown-menu-right ks_color_pallate"
+                t-att-data-item-id="chart_id"
+                t-att-data-chart-type="chart_type" t-att-data-chart-family="chart_family">
+                <t t-set="count" t-value="0"/>
+                <t t-foreach="ksChartColorOptions" t-as="color_option">
+                    <li t-att-class="'ks_li_'+ksChartColorID[count]">
+                        <span t-att-class="color_option + ' ks_chart_color_options'"
+                              t-att-data-chart-color="color_option">
+                            <t t-esc="color_option"/>
+                        </span>
+                    </li>
+                    <t t-set="count" t-value="count+1"/>
+                </t>
+            </ul>
+        </t>
+    </t>
+
+    <t t-extend="ks_dashboard_theme_view_old">
+        <t t-jquery="div.ks_dashboard_theme_view_render" t-operation="append">
+            <t t-foreach="widget.extra_gradients_list" t-as="custom_color_rec">
+                <div class="ks_dashboard_theme_input_container">
+                    <input t-att-id="'custom_color_' + custom_color_rec.id"
+                           class="ks_dashboard_theme_input ks_custom_color" type="checkbox"
+                           t-att-name="custom_color_rec.name"
+                           t-att-style="'background-image:' + custom_color_rec"
+                           t-att-value="custom_color_rec"/>
+                    <span class="ks_checkmark"/>
+                </div>
+            </t>
+        </t>
+    </t>
+    <t t-name="ks_dashboard_image_theme" t-extend="ks_dashboard_theme_view">
+        <t t-jquery="div.ks_dashboard_theme_view_render" t-operation="append">
+<!--            <t t-ddebug="pdb"/>-->
+            <t t-foreach="color" t-as="custom_color_rec">
+                <div class="ks_dashboard_theme_input_container">
+                    <input t-att-id="'custom_color_' + custom_color_rec.id"
+                           class="ks_dashboard_theme_input ks_custom_color" type="checkbox"
+                           t-att-name="custom_color_rec.name"
+                           t-att-style="'background-image:' + custom_color_rec"
+                           t-att-value="custom_color_rec"/>
+                    <span class="ks_checkmark"/>
+                </div>
+            </t>
+        </t>
+    </t>
+
+    <!-- Chart Theme Preview -->
+    <t t-name="ks_chart_theme_preview_container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card shadow p-0 m-0 w-100">
+                    <div class="p-3 py-3 d-flex flex-row align-items-center justify-content-between ">
+                        <h6 class="m-0 font-weight-bold h3 ks_chart_heading">
+                            Example
+                        </h6>
+                    </div>
+                    <div class="card-body" id="ksChartView">
+                        <canvas id="ksChartPreview" height="250px"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

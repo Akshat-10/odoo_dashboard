@@ -1,0 +1,28 @@
+#popup{
+
+    padding: 5px;
+}
+
+.theme_popup{
+    visibility: hidden;
+    margin-right: 10px !important;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.theme_popup_parent:hover .theme_popup{
+    visibility: visible;
+    opacity: 1;
+}
+
+.ks_chart_card_body.card-body{
+    background-color: transparent !important;
+}
+
+.ks_dashboard_theme_view_render{
+    display: flex;
+    flex-wrap: wrap;
+}
+.o_notification_content{
+background-color:wheat
+}
