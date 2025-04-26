@@ -1,0 +1,293 @@
+/* for pop wizards */
+.modal-lg,.modal-xl{
+    max-width: 95% !important;
+    width: 95% !important;
+    padding: 50px !important;
+}
+
+
+.o_form_view.o_form_nosheet, .o_form_view .o_form_nosheet {
+    padding-top: 24px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+    padding-left: 40px;
+}
+
+/* Form controller*/
+.o_form_view.o_xxl_form_view .o_form_sheet_bg > .o_form_sheet {
+    position: relative;
+    width: 100%;
+    max-width: 95% !important;
+    padding: 50px !important;
+    font-size: 18px !important;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure background doesn't bleed out */
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.o_form_view.o_xxl_form_view .o_form_sheet_bg > .o_form_sheet::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/06/79/94/65/360_F_679946573_i4vHFwrD5UoQzHBi0041oxhSDOiREdZW.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust this for transparency */
+    z-index: -1; /* Send behind the content */
+}
+.o_form_view .o_form_sheet_bg {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    background-color: #eaeaeb;
+    border-bottom: 1px solid #dee2e6;
+}
+.o_form_label {
+    font-size: 18px !important;
+
+}
+&:not(.o_field_highlight) .o_field_widget:not(.o_field_invalid):not(.o_field_highlight) .o_input:not(:hover):not(:focus) {
+        --o-input-border-color: #65686b !important;
+}
+.o_list_renderer {
+    --ListRenderer-thead-bg-color: #a3c6e9 !important;
+    --ListRenderer-thead-border-end-color: #000000;
+    padding: 20px;
+}
+.o_list_renderer .o_list_table {
+    background-color: #ffffff33;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid #27292c !important;
+}
+
+/* for ribbon */
+.ribbon-top-right {
+    margin-top: -50px !important;
+
+}
+/* for Button */
+/* Primary Button */
+.btn-fill-primary, .btn-primary {
+    color: #ffffff;
+    background-color: #007b86;
+    border-color: #007b86;
+    font-size: 13px !important;
+    margin-right: 10px !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-fill-primary:hover, .btn-primary:hover {
+    background-color: #006974;
+    border-color: #006974;
+    color: #ffffff;
+}
+
+/* Secondary Button - Themed to Primary */
+.btn-fill-secondary, .btn-secondary {
+    color: #007b86;
+    background-color: #e6f5f6;
+    border-color: #b3e1e5;
+    font-size: 13px !important;
+    margin-right: 10px !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-fill-secondary:hover, .btn-secondary:hover {
+    background-color: #d0eef1;
+    border-color: #99d6db;
+    color: #006974;
+}
+
+
+.ribbon::before, .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: transparent;
+}
+.ribbon-top-right::before, .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.o_field_widget.o_field_many2one .o_external_button{
+    background-color: transparent !important;
+    color: #007b86 !important;
+}
+
+/* for table */
+.o_content {
+    position: relative;
+    z-index: 1;
+
+}
+.table {
+    vertical-align: middle !important;
+}
+.thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border: 1px solid black;
+}
+.ks_dashboard_main_content::before{
+ content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://t4.ftcdn.net/jpg/06/79/94/65/360_F_679946573_i4vHFwrD5UoQzHBi0041oxhSDOiREdZW.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust this for background transparency */
+}
+
+.o_content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://t4.ftcdn.net/jpg/06/79/94/65/360_F_679946573_i4vHFwrD5UoQzHBi0041oxhSDOiREdZW.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust this for background transparency */
+    z-index: -1;
+}
+.o_notebook .nav {
+    background-color: transparent !important;
+}
+.o_notebook_headers {
+    border: 1px solid white !important; /* or any color/width/style you like */
+}
+.bg-100{
+    background-color: transparent !important;
+}
+.o_notebook .nav-link.active, .o_notebook .nav-link.active:hover, .o_notebook .nav-link.active:focus, .o_notebook .nav-link.active:active {
+    border-color: #020202 !important;
+    border-top-color: #000000 !important;
+    border-bottom-color: white !important;
+    background-color: #a3c6e9 !important;
+    color: #040404;
+    font-weight: 500;
+}
+
+.o_notebook .nav-link {
+    border-color: #0c7cdf61 !important;
+    color: black;
+    font-weight: 400;
+}
+
+.o_form_view:not(.o_field_highlight) .o_field_many2one_selection .o_external_button, .o_form_view:not(.o_field_highlight) .o_field_many2one_selection .o_dropdown_button {
+    visibility: visible !important;
+}
+.o_field_widget.o_field_many2many_tags .badge .o_badge_text, .o_field_widget.o_field_many2many_tags .badge .o_tag_badge_text {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    max-width: 200px;
+    color: #060606;
+    line-height: 1.1;
+}
+
+.o_tag .o_tag_badge_text {
+    font-size: 14px;
+}
+.o_field_badge span, span.o_field_badge {
+    border: 0.5px solid black !important;
+    font-size: 16px !important;
+}
+.fa {
+    font-size: 18px !important;
+}
+
+.o_field_widget.o_field_many2many_tags .badge {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 1px 2px 1px 0;
+    border: none;
+    font-size: 32px !important;
+    background-color: transparent !important;
+}
+.btn-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a4ce7;
+}
+
+/* Headers */
+.o_control_panel {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 0.5rem;
+    padding-right: 16px;
+    padding-bottom: 0.5rem;
+    padding-left: 16px;
+    background-color: #bfebe9;
+}
+
+.o_form_view .o_form_statusbar {
+    background-color: #e3eded;
+}
+.breadcrumb-item.active {
+    color: black;
+}
+
+.breadcrumb-item o_back_button {
+    font-weight: bold;
+}
+.breadcrumb {
+    background-color: transparent !important;
+}
+.o_control_panel .breadcrumb {
+    font-size: 18px;
+    font-weight: 500 !important;
+}
+.btn-group > .btn, .btn-group-vertical > .btn {
+    background-color: transparent !important;
+    color: black !important;
+}
+.btn-outline-secondary, .btn-light, .o_form_view .o_statusbar_status .o_arrow_button:not(.disabled) {
+    color: #f7f7f7;
+}
+.btn-light, .o_form_view .o_statusbar_status .o_arrow_button:not(.disabled) {
+    color: #FFFFFF;
+    background-color: #007b86;
+    border-color: #FFFFFF;
+}
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button.disabled:not(.o_arrow_button_current), .o_field_statusbar > .o_statusbar_status > .o_arrow_button.disabled:not(.o_arrow_button_current):hover, .o_field_statusbar > .o_statusbar_status > .o_arrow_button.disabled:not(.o_arrow_button_current):focus {
+    color: rgb(11 12 12 / 76%);
+}
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button.disabled:not(.o_arrow_button_current), .o_field_statusbar > .o_statusbar_status > .o_arrow_button.disabled:not(.o_arrow_button_current):hover, .o_field_statusbar > .o_statusbar_status > .o_arrow_button.disabled:not(.o_arrow_button_current):focus {
+    color: black !important;
+}
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button.o_arrow_button_current.disabled:after, .o_field_statusbar > .o_statusbar_status > .o_arrow_button.o_arrow_button_current.disabled:before {
+    border-left-color: #30225e;
+}
+
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button.o_arrow_button_current.disabled {
+    background-color: #30225e;
+    color: #FFFFFF;
+}
+
+/* Kanban View */
+.o_kanban_renderer .oe_kanban_card.oe_kanban_global_click, .o_kanban_renderer .oe_kanban_card.oe_kanban_global_click_edit, .o_kanban_renderer .oe_kanban_card .oe_kanban_global_click, .o_kanban_renderer .oe_kanban_card .oe_kanban_global_click_edit, .o_kanban_renderer .o_kanban_record.oe_kanban_global_click, .o_kanban_renderer .o_kanban_record.oe_kanban_global_click_edit, .o_kanban_renderer .o_kanban_record .oe_kanban_global_click, .o_kanban_renderer .o_kanban_record .oe_kanban_global_click_edit {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}

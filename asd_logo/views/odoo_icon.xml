@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit web.layout to change the favicon -->
+    <template id="custom_layout" inherit_id="web.layout" name="Custom Layout">
+
+        <xpath expr="//title" position="replace">
+            <title t-esc="title or 'ASD'"/>            
+        </xpath>
+        <xpath expr="//link[@rel='shortcut icon']" position="replace">
+            <link type="image/x-icon" rel="shortcut icon" t-att-href="'/asd_logo/static/description/icon/asd_logo.ico'"/>
+        </xpath>
+    </template>
+
+    <!-- Attempt to extend database manager favicon -->
+    <!-- Note: database_manager.qweb.html is rendered via a controller, so direct template inheritance may not work -->
+    <!-- Instead, we can try to override the rendering context or use a controller override if needed -->
+    <!-- For now, we'll document the limitation -->
+</odoo>
