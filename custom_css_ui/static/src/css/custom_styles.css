@@ -4,6 +4,63 @@
     width: 95% !important;
     padding: 50px !important;
 }
+.modal .modal-dialog .o_form_view {
+    position: relative;
+    min-height: auto;
+    overflow: hidden;
+}
+.modal-content {
+    color: #495057;
+    border-radius: 1.25rem;
+}
+.modal-header,
+.modal-footer {
+    position: relative;
+    z-index: 1;
+    background: none; /* Remove default background */
+}
+
+.modal-header::before,
+.modal-footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, orange, white, green);
+    box-shadow: inset 0 4px 9px rgba(0, 0, 0, 0.2); /* Corrected rgba values */
+    opacity: 0.5; /* Only background is transparent */
+    z-index: -1; /* Stay behind the text */
+    pointer-events: none;
+    color:black;
+}
+
+
+.modal .modal-dialog .o_form_view .o_form_sheet_bg > .o_form_sheet::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Same as top:0; right:0; bottom:0; left:0 */
+    background-image: url('https://t4.ftcdn.net/jpg/06/79/94/65/360_F_679946573_i4vHFwrD5UoQzHBi0041oxhSDOiREdZW.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Only the image is transparent */
+    z-index: 0;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.modal .modal-dialog .o_form_view .o_form_sheet_bg > .o_form_sheet {
+    position: relative;
+    z-index: 1; /* Keep form above background */
+    background-color: transparent !important; /* Fully transparent background */
+    box-shadow: none;
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+    border: none;
+    color: black;
+}
+.o_list_renderer .o_list_table tfoot {
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
 
 
 .o_form_view.o_form_nosheet, .o_form_view .o_form_nosheet {
@@ -12,7 +69,13 @@
     padding-bottom: 24px;
     padding-left: 40px;
 }
-
+.o_form_view .o_input {
+    padding: 2px 4px;
+    font-size: 18px;
+}
+.o_form_view .o_group .o_field_widget, .o_form_view .o_inner_group .o_field_widget {
+    font-size: 18px !important;
+}
 /* Form controller*/
 .o_form_view.o_xxl_form_view .o_form_sheet_bg > .o_form_sheet {
     position: relative;
@@ -89,12 +152,16 @@
     border-color: #006974;
     color: #ffffff;
 }
+a {
+    color: #4106fa;
+    text-decoration: none;
+}
 
 /* Secondary Button - Themed to Primary */
 .btn-fill-secondary, .btn-secondary {
     color: #007b86;
     background-color: #e6f5f6;
-    border-color: #b3e1e5;
+    border-color: black;
     font-size: 13px !important;
     margin-right: 10px !important;
     padding: 8px 16px;
@@ -109,6 +176,12 @@
     color: #006974;
 }
 
+.active.btn-light{
+    border-color: black !important;
+}
+.btn-light, .o_form_view .o_statusbar_status .o_arrow_button:not(.disabled) {
+    border-color: black;
+}
 
 .ribbon::before, .ribbon::after {
     position: absolute;
@@ -135,10 +208,15 @@
 .table {
     vertical-align: middle !important;
 }
+.o_list_view td,.o_list_view th,.o_form_view td,.o_form_view th{
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+}
 .thead, tbody, tfoot, tr, td, th {
     border-color: inherit;
     border: 1px solid black;
 }
+
 .ks_dashboard_main_content::before{
  content: "";
     position: absolute;
@@ -165,6 +243,11 @@
     opacity: 0.3; /* Adjust this for background transparency */
     z-index: -1;
 }
+
+.o_main_navbar {
+    background: linear-gradient(0, #010177, #212529);
+}
+
 .o_notebook .nav {
     background-color: transparent !important;
 }
@@ -237,7 +320,13 @@
     padding-right: 16px;
     padding-bottom: 0.5rem;
     padding-left: 16px;
-    background-color: #bfebe9;
+    background: linear-gradient(45deg, orange, white, green);
+    box-shadow: inset 0 4px 9px rgba(0.5, 0.5, 0.5, 0.5);
+}
+.btn-group > .btn, .btn-group-vertical > .btn {
+    background-color: transparent !important;
+    color: black !important;
+    border-color: black;
 }
 
 .o_form_view .o_form_statusbar {
@@ -246,7 +335,11 @@
 .breadcrumb-item.active {
     color: black;
 }
-
+.btn-outline-primary {
+    color: #2f2d38;
+    border-color: #71639e;
+    background-color: #bef3f8;
+}
 .breadcrumb-item o_back_button {
     font-weight: bold;
 }
