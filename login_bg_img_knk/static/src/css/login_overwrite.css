@@ -1,0 +1,46 @@
+body.bg-100 {
+    background-color: transparent !important;
+
+}
+body.bg-100 .card.o_database_list {
+    background-color: transparent !important;
+    box-shadow: -15px 15px 39px rgb(0 0 0 / 99%) !important;
+    min-width: 400px;
+}
+
+.btn-fill-primary, .btn-primary {
+    color: #FFFFFF;
+    background-color: #35979c;
+    border-color: #35979c;
+    box-shadow: -5px 5px 8px rgb(0 0 0 / 55%) !important;
+    font-weight: 500;
+}
+
+.alert-danger {
+    text-shadow: none;
+    font-weight: 400;
+
+}
+
+.card{
+    border-radius: 10px !important;
+}
+
+.card-body {
+    background-color: transparent !important;
+    color: white !important;
+    text-shadow: 1px 3px 3px black !important;
+    border-radius: 10px !important;
+    max-width: 1000px !important;
+}
+a {
+    color: #06248f;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #ffffff;
+    font-weight: 700;
+}
+
+.form-label {
+    color:white !important;
+    text-shadow: 1px 3px 3px black;
+}

@@ -36,7 +36,7 @@ body.o_web_client {
 [data-color-mode="ks-dn-dark"] .ks_html_widget_item, [data-color-mode="ks-dn-dark"] .ks_height_100 {
      background-color: var(--ks-body-bg-dark) !important;
 }
-[data-color-mode="ks-dn-dark"] .btn-secondary, [data-color-mode="ks-dn-dark"] .card-body {
+[data-color-mode="ks-dn-dark"] .btn-secondary, [data-color-mode="ks-dn-dark"] {
     background-color: var(--ks-bg-dark-grey) !important;
     background: var(--ks-bg-dark-grey);
      @extend.ks-text-white;

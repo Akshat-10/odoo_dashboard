@@ -18,6 +18,7 @@
     'assets': {
         'web.assets_frontend': [
             'login_bg_img_knk/static/src/css/bg_image.scss',
+            'login_bg_img_knk/static/src/css/login_overwrite.css',
         ],
     },
     'images': ['static/description/banner.gif'],

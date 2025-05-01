@@ -1,3 +1,28 @@
+/* Login Page */
+.card-body {
+    background-color: transparent !important;
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card{
+    background-color: transparent !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px !important;
+}
+.bg-100{
+    background-color: transparent !important;
+}
+.ks_list_view_layout_3 .ks_tr:nth-child(even), .ks_list_view_layout_1 .ks_tr:nth-child(even) {
+    background-color: #c2d6e8a1;
+
+}
+
+.shadow, .o_legacy_kanban_view .ui-sortable-helper {
+    box-shadow: 1rem 1rem 0.3rem rgba(0, 0, 0, 0.2) !important;
+    border-radius: 10px;
+    border: 1px solid #000000 !important;
+}
+
 /* for pop wizards */
 .modal-lg,.modal-xl{
     max-width: 95% !important;
@@ -384,3 +409,4 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
+
