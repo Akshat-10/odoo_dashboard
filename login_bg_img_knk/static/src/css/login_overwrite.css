@@ -28,8 +28,8 @@ body.bg-100 .card.o_database_list {
 
 .card-body {
     background-color: transparent !important;
-    color: white !important;
-    text-shadow: 1px 3px 3px black !important;
+    color: black !important;
+    /*text-shadow: 1px 3px 3px black !important;*/
     border-radius: 10px !important;
     max-width: 1000px !important;
 }
@@ -41,6 +41,6 @@ a {
 }
 
 .form-label {
-    color:white !important;
-    text-shadow: 1px 3px 3px black;
+    color: black !important;
+    /*text-shadow: 1px 3px 3px black !important;*/
 }

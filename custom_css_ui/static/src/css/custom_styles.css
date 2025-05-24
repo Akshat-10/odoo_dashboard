@@ -160,6 +160,11 @@
 }
 /* for Button */
 /* Primary Button */
+.o-form-buttonbox .btn.oe_stat_button > .o_stat_info .o_stat_value, .o-form-buttonbox .btn.oe_stat_button > span .o_stat_value, .o-form-buttonbox .btn.oe_stat_button > .o_field_statinfo .o_stat_value {
+    font-weight: 500;
+    color: #a0e2eb;
+}
+
 .btn-fill-primary, .btn-primary {
     color: #ffffff;
     background-color: #007b86;
