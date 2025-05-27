@@ -113,8 +113,29 @@
     z-index: 1;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+.o_form_view .o_form_sheet_bg > .o_form_sheet {
+    position: relative;
+    width: 100%;
+    max-width: 95% !important;
+    padding: 50px !important;
+    font-size: 18px !important;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure background doesn't bleed out */
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
 
 .o_form_view.o_xxl_form_view .o_form_sheet_bg > .o_form_sheet::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/06/79/94/65/360_F_679946573_i4vHFwrD5UoQzHBi0041oxhSDOiREdZW.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust this for transparency */
+    z-index: -1; /* Send behind the content */
+}
+.o_form_view .o_form_sheet_bg > .o_form_sheet::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
