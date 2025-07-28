@@ -153,7 +153,8 @@
     padding: 50px !important;
     font-size: 18px !important;
     border-radius: 20px;
-    overflow: hidden; /* Ensure background doesn't bleed out */
+    verflow-x: auto; /* ✅ Fix */
+    overflow-y: hidden; /* ✅ Optional, to avoid vertical scroll bars */
     z-index: 1;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -206,6 +207,26 @@
     font-weight: 400;
     border: 1px solid #27292c !important;
 }
+/* Ensure the One2many widget scrolls horizontally if needed */
+.o_field_widget.o_field_one2many_list {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Force the inner table to expand only when needed */
+.o_list_renderer .o_list_table {
+    width: max-content; /* Prevent breaking layout */
+    min-width: 100%;
+    table-layout: auto;
+}
+
+/* Make the column text wrap neatly */
+.o_list_renderer .o_list_table td, .o_list_renderer .o_list_table th {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
 
 /* for ribbon */
 .ribbon-top-right {
